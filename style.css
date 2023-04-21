@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Mono', monospace;
+
+}
+
+body {
+    background: #0e0e0e;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #494949;
+}
+
+img {
+    border-radius: 2px;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    color: #494949;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    
+}
+
+.hero p {
+    font-size: 2rem;
+}
+
+.bottom-div {
+    position: absolute;
+    bottom: 1em;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+     
+    
+}
+
+.login {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login a {
+    text-transform: uppercase;
+    font-size: small;
+    color: #921212;
+}
+
+.login a:hover {
+    color: #494949;
+}
+
+.login p {
+    width: 30%;
+    color: gray;
+    font-size: 12px;
+}
+
+.location {
+    position: relative;
+    width: 40%;
+    height: 80px;
+    color: white;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+    background: #272727;
+}
+
+.country, .year {
+    padding: 0.8rem;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+
+.country span {
+    padding: 0.8rem;
+}
+
+.year {
+    width: 50%;
+    background: #181818;
+}
+
+
+.year span {
+    padding: 0.8rem;
+}
+
+.links {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 25px 50px;
+
+}
+
+.nav-menu li {
+    padding-top: 4rem;
+    transform: rotate(-90deg);
+    font-size: small;
+   
+
+}
+
+.nav-menu li a {
+    color: #921212;
+}
+
+.nav-menu li a:hover {
+    color: #494949;
+}
+
+.page-1 {
+    padding: 50px;
+}
+
+.portfolio {
+    position: relative;
+}
+
+.title {
+    color: #921212;
+    font-size: larger;
+    text-transform: capitalize;
+    background-color: #272727;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.about {
+    position: relative;
+}
+
+.about-container {
+    background: #494949;
+    height: 300px;
+    padding: 1.5rem;
+    margin-top: 15px;
+
+}
+
+.portfolio-wrapper {
+    margin-top: 15px;
+    display: grid;
+    grid-template-columns: repeat(3, 0fr);
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+}
+
+.portfolio-wrapper > div {
+
+    width: 400px;
+}
+
+.portfolio-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.cta {
+    padding: 20px 50px;
+    background-color: #181818;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    align-items: center;
+    color: white;
+}
+
+.cta-input input {
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: .4rem;
+    border: none;
+}
+
+.cta-input a {
+    font-weight: bold;
+    text-decoration: underline;
+    color: #921212;
+}
+
+.cta-input button {
+    padding: .2rem;
+
+}
+
+
+.center {
+    display: flex;
+}
+
+
+.center a {
+    margin: auto;
+    font-size: 2.5rem;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background: #181818;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.left-m {
+    margin-right: 20px;
+}
+
+.left-m li a, .right-m li a {
+    color: white;
+}
+
+
+
+@media (max-width:900px) {
+    .location {
+        display: none;
+    }
+
+    .login {
+        width: 100%;
+    }
+    
+    .navbar {
+        grid-template-columns: repeat(2,1fr);
+    }
+    
+    .main {
+        display: flex;
+        align-items: center;
+    }
+
+    .main img {
+        display: none;
+    }
+
+    .main p {
+        font-size: .5rem;
+    }
+
+    .about-container p {
+        font-size: .6rem;
+    }
+
+    .main-txt a {
+        font-size: .6rem;
+    }
+
+    .portfolio-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portfolio-wrapper > div {
+
+        width: 250px;
+    }
+
+    .cta {
+        padding: 20px 50px;
+        background-color: #181818;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 3fr 3fr;
+        align-items: center;
+        color: white;
+        gap: 12px;
+    }
+    
+}
+
